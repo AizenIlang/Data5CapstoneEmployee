@@ -1,0 +1,25 @@
+﻿{
+  "Name": "Output",
+  "DataSourceType": "Blob Storage",
+  "BlobStorageProperties": {
+    "StorageAccounts": [
+      {
+        "AccountName": "rgd2lake",
+        "AccountKey": null
+      }
+    ],
+    "Container": "rgd2lakefs",
+    "PathPattern": "",
+    "DateFormat": "yyyy/MM/dd",
+    "TimeFormat": "HH",
+    "AuthenticationMode": "ConnectionString"
+  },
+  "DataSourceCredentialDomain": "32c57105-1f47-4744-85cc-d214dc8f3c37.StreamAnalystics",
+  "Serialization": {
+    "Type": "Json",
+    "Encoding": "UTF8",
+    "FieldDelimiter": null,
+    "Format": "LineSeparated"
+  },
+  "ScriptType": "Output"
+}

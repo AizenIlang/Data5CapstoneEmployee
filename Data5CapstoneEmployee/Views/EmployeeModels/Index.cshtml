@@ -1,0 +1,135 @@
+﻿@model IEnumerable<Data5CapstoneEmployee.Models.EmployeeModels>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Department)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Education)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobRole)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumCompaniesWorked)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerformanceRating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainingTimeLastYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearsAtCompany)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearsInCurrentRole)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearsSinceLastPromotion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearsWithCurr4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobSatisfaction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnvironmentSatisfaction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkLifeBalance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeCount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Department)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Education)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobRole)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaritalStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumCompaniesWorked)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerformanceRating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrainingTimeLastYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearsAtCompany)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearsInCurrentRole)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearsSinceLastPromotion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearsWithCurr4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobSatisfaction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnvironmentSatisfaction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkLifeBalance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeCount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeNumber }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EmployeeNumber }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EmployeeNumber })
+        </td>
+    </tr>
+}
+
+</table>

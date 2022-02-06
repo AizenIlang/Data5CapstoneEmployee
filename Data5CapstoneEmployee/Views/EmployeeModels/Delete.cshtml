@@ -1,0 +1,168 @@
+﻿@model Data5CapstoneEmployee.Models.EmployeeModels
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>EmployeeModels</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Education)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Education)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobLevel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobRole)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobRole)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaritalStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumCompaniesWorked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumCompaniesWorked)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PerformanceRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PerformanceRating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainingTimeLastYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainingTimeLastYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsAtCompany)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearsAtCompany)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsInCurrentRole)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearsInCurrentRole)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsSinceLastPromotion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearsSinceLastPromotion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsWithCurr4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearsWithCurr4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobSatisfaction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobSatisfaction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnvironmentSatisfaction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnvironmentSatisfaction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkLifeBalance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkLifeBalance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeCount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeCount)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
