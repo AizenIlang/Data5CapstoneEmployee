@@ -9,7 +9,9 @@ namespace Data5CapstoneEmployee.Models
     public class EmployeeModels
     {
         [Key]
-        public int EmployeeNumber { get; set; }       
+        public int EmployeeNumber { get; set; }
+        public string FirstName { get; set; }
+        public string Lastname { get; set; }
         public Department Department { get; set; }
         public Education Education { get; set; }
         public Gender Gender { get; set; }
